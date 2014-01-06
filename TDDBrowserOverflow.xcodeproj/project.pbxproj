@@ -19,6 +19,9 @@
 		6A1EE1D71874310800331BF7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1EE1BF1874310800331BF7 /* UIKit.framework */; };
 		6A1EE1DF1874310800331BF7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A1EE1DD1874310800331BF7 /* InfoPlist.strings */; };
 		6A1EE1E11874310800331BF7 /* TDDBrowserOverflowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1EE1E01874310800331BF7 /* TDDBrowserOverflowTests.m */; };
+		6A4001FA187A834E00788682 /* Topic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4001F9187A834E00788682 /* Topic.m */; };
+		6A4001FB187A834E00788682 /* Topic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4001F9187A834E00788682 /* Topic.m */; };
+		6A4001FF187A837B00788682 /* TopicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4001FE187A837B00788682 /* TopicTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,9 @@
 		6A1EE1DC1874310800331BF7 /* TDDBrowserOverflowTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TDDBrowserOverflowTests-Info.plist"; sourceTree = "<group>"; };
 		6A1EE1DE1874310800331BF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6A1EE1E01874310800331BF7 /* TDDBrowserOverflowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDDBrowserOverflowTests.m; sourceTree = "<group>"; };
+		6A4001F8187A834E00788682 /* Topic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Topic.h; sourceTree = "<group>"; };
+		6A4001F9187A834E00788682 /* Topic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Topic.m; sourceTree = "<group>"; };
+		6A4001FE187A837B00788682 /* TopicTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,7 @@
 		6A1EE1C11874310800331BF7 /* TDDBrowserOverflow */ = {
 			isa = PBXGroup;
 			children = (
+				6A4001F6187A832900788682 /* Classes */,
 				6A1EE1CA1874310800331BF7 /* AppDelegate.h */,
 				6A1EE1CB1874310800331BF7 /* AppDelegate.m */,
 				6A1EE1CD1874310800331BF7 /* Images.xcassets */,
@@ -129,6 +136,7 @@
 		6A1EE1DA1874310800331BF7 /* TDDBrowserOverflowTests */ = {
 			isa = PBXGroup;
 			children = (
+				6A4001FC187A835100788682 /* Tests */,
 				6A1EE1E01874310800331BF7 /* TDDBrowserOverflowTests.m */,
 				6A1EE1DB1874310800331BF7 /* Supporting Files */,
 			);
@@ -142,6 +150,39 @@
 				6A1EE1DD1874310800331BF7 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6A4001F6187A832900788682 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6A4001F7187A833400788682 /* Models */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		6A4001F7187A833400788682 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6A4001F8187A834E00788682 /* Topic.h */,
+				6A4001F9187A834E00788682 /* Topic.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6A4001FC187A835100788682 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6A4001FD187A835E00788682 /* Models */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		6A4001FD187A835E00788682 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6A4001FE187A837B00788682 /* TopicTests.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A4001FA187A834E00788682 /* Topic.m in Sources */,
 				6A1EE1CC1874310800331BF7 /* AppDelegate.m in Sources */,
 				6A1EE1C81874310800331BF7 /* main.m in Sources */,
 			);
@@ -249,6 +291,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A1EE1E11874310800331BF7 /* TDDBrowserOverflowTests.m in Sources */,
+				6A4001FF187A837B00788682 /* TopicTests.m in Sources */,
+				6A4001FB187A834E00788682 /* Topic.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +485,7 @@
 				6A1EE1E61874310800331BF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A1EE1E71874310800331BF7 /* Build configuration list for PBXNativeTarget "TDDBrowserOverflowTests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +494,7 @@
 				6A1EE1E91874310800331BF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
