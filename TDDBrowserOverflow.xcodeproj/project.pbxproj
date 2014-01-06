@@ -27,6 +27,9 @@
 		6A7C3342187A8DC700059B61 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7C3341187A8DC700059B61 /* Person.m */; };
 		6A7C3343187A8DC700059B61 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7C3341187A8DC700059B61 /* Person.m */; };
 		6A7C3345187A8E2900059B61 /* PersonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7C3344187A8E2900059B61 /* PersonTests.m */; };
+		6A7C3348187AC1B000059B61 /* Answer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7C3347187AC1B000059B61 /* Answer.m */; };
+		6A7C3349187AC1B000059B61 /* Answer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7C3347187AC1B000059B61 /* Answer.m */; };
+		6A7C334B187AC1F700059B61 /* AnswerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7C334A187AC1F700059B61 /* AnswerTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,9 @@
 		6A7C3340187A8DC700059B61 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		6A7C3341187A8DC700059B61 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		6A7C3344187A8E2900059B61 /* PersonTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonTests.m; sourceTree = "<group>"; };
+		6A7C3346187AC1B000059B61 /* Answer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Answer.h; sourceTree = "<group>"; };
+		6A7C3347187AC1B000059B61 /* Answer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Answer.m; sourceTree = "<group>"; };
+		6A7C334A187AC1F700059B61 /* AnswerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +186,8 @@
 				6A400203187A87E600788682 /* Question.m */,
 				6A7C3340187A8DC700059B61 /* Person.h */,
 				6A7C3341187A8DC700059B61 /* Person.m */,
+				6A7C3346187AC1B000059B61 /* Answer.h */,
+				6A7C3347187AC1B000059B61 /* Answer.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -198,6 +206,7 @@
 				6A4001FE187A837B00788682 /* TopicTests.m */,
 				6A400200187A87C700788682 /* QuestionTests.m */,
 				6A7C3344187A8E2900059B61 /* PersonTests.m */,
+				6A7C334A187AC1F700059B61 /* AnswerTests.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -298,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A4001FA187A834E00788682 /* Topic.m in Sources */,
+				6A7C3348187AC1B000059B61 /* Answer.m in Sources */,
 				6A400204187A87E600788682 /* Question.m in Sources */,
 				6A7C3342187A8DC700059B61 /* Person.m in Sources */,
 				6A1EE1CC1874310800331BF7 /* AppDelegate.m in Sources */,
@@ -310,7 +320,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A1EE1E11874310800331BF7 /* TDDBrowserOverflowTests.m in Sources */,
+				6A7C3349187AC1B000059B61 /* Answer.m in Sources */,
 				6A400201187A87C700788682 /* QuestionTests.m in Sources */,
+				6A7C334B187AC1F700059B61 /* AnswerTests.m in Sources */,
 				6A7C3343187A8DC700059B61 /* Person.m in Sources */,
 				6A4001FF187A837B00788682 /* TopicTests.m in Sources */,
 				6A7C3345187A8E2900059B61 /* PersonTests.m in Sources */,
