@@ -11,6 +11,8 @@
 
 @interface TopicTests : XCTestCase
 
+@property (nonatomic, strong) Topic *topic;
+
 @end
 
 @implementation TopicTests
@@ -18,31 +20,30 @@
 - (void)setUp
 {
     [super setUp];
+    _topic = [[Topic alloc] initWithName:@"iPhone" tag:@"iphone"];
     // Put setup code here; it will be run once, before the first test case.
 }
 
 - (void)tearDown
 {
     // Put teardown code here; it will be run once, after the last test case.
+    _topic = nil;
     [super tearDown];
 }
 
 - (void)testThatTopicExists
 {
-    Topic *newTopic = [[Topic alloc] init];
-    XCTAssertNotNil(newTopic, @"should be able to create a Topic object");
+    XCTAssertNotNil(_topic, @"should be able to create a Topic object");
 }
 
 - (void)testThatTopicCanBeNamed
 {
-    Topic *newTopic = [[Topic alloc] initWithName: @"iPhone"];
-    XCTAssertEqualObjects(newTopic.name, @"iPhone", @"the Topic should have the name I gave it");
+    XCTAssertEqualObjects(_topic.name, @"iPhone", @"the Topic should have the name I gave it");
 }
 
 - (void)testThatTopicHasATag
 {
-    Topic *taggedTopic = [[Topic alloc] initWithName:@"iPhone" tag:@"iphone"];
-    XCTAssertEqualObjects(taggedTopic.tag, @"iphone", @"Topics need to have tags");
+    XCTAssertEqualObjects(_topic.tag, @"iphone", @"Topics need to have tags");
 }
 
 @end

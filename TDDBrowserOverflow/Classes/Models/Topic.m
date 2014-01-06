@@ -12,14 +12,7 @@
 
 - (instancetype)initWithName:(NSString *)newName
 {
-    self = [super init];
-    if (!self){
-        return nil;
-    }
-    
-    _name = newName;
-    
-    return self;
+    return [self initWithName:newName tag:nil];
 }
 
 - (instancetype)initWithName:(NSString *)newName tag:(NSString *)newTag
