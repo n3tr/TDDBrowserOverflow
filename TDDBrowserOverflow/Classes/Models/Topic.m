@@ -28,4 +28,9 @@
     return self;
 }
 
+- (NSArray *)recentQuestions
+{
+    return [NSArray array];
+}
+
 @end
