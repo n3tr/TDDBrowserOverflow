@@ -7,6 +7,7 @@
 //
 
 #import "Topic.h"
+#import "Question.h"
 
 @implementation Topic
 
@@ -24,13 +25,30 @@
     
     _name = newName;
     _tag = newTag;
+    _question = [[NSArray alloc] init];
     
     return self;
 }
 
+- (void)addQuestion:(Question *)question
+{
+    _question = [_question arrayByAddingObject:question];
+}
+
 - (NSArray *)recentQuestions
 {
-    return [NSArray array];
+    NSArray *sortedArray = [_question sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
+        Question *q1 = (Question *)obj1;
+        Question *q2 = (Question *)obj2;
+        return [q2.date compare:q1.date];
+    }];
+    
+    if (sortedArray.count < 21) {
+        return sortedArray;
+    }
+    else{
+        return [sortedArray subarrayWithRange:NSMakeRange(0, 20)];
+    }
 }
 
 @end
