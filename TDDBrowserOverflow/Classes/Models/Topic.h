@@ -19,8 +19,8 @@
 - (instancetype)initWithName:(NSString *)newName;
 - (instancetype)initWithName:(NSString *)newName tag:(NSString *)newTag;
 
-- (NSArray *)recentQuestions;
 - (void)addQuestion:(Question *)question;
 
+- (NSArray *)recentQuestions;
 
 @end
