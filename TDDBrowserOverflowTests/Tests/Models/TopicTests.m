@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "Topic.h"
+#import "Question.h"
 
 @interface TopicTests : XCTestCase
 
@@ -21,12 +22,10 @@
 {
     [super setUp];
     _topic = [[Topic alloc] initWithName:@"iPhone" tag:@"iphone"];
-    // Put setup code here; it will be run once, before the first test case.
 }
 
 - (void)tearDown
 {
-    // Put teardown code here; it will be run once, after the last test case.
     _topic = nil;
     [super tearDown];
 }
@@ -48,6 +47,18 @@
 
 - (void)testForAListOfQuestions {
     XCTAssertTrue([[_topic recentQuestions] isKindOfClass:[NSArray class]], @"Topic should provide a list of recent questions");
+}
+
+- (void)testForInitiallyEmptyQusetionList
+{
+    XCTAssertEqual((NSUInteger)[[_topic recentQuestions] count], (NSUInteger)0, @"No questions added yet, count should be zero");
+}
+
+- (void)testAddingAQuestionToTheList
+{
+    Question *newQuestion = [[Question alloc] init];
+    [_topic addQuestion: newQuestion];
+    XCTAssertEqual((NSUInteger)[[_topic recentQuestions] count], (NSUInteger)1, @"Add a question, and the count of questions should go up");
 }
 
 @end

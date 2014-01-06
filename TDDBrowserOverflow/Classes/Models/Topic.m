@@ -24,13 +24,19 @@
     
     _name = newName;
     _tag = newTag;
+    _question = [[NSArray alloc] init];
     
     return self;
 }
 
+- (void)addQuestion:(Question *)question
+{
+    _question = [_question arrayByAddingObject:question];
+}
+
 - (NSArray *)recentQuestions
 {
-    return [NSArray array];
+    return _question;
 }
 
 @end
