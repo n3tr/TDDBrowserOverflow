@@ -22,6 +22,8 @@
 		6A4001FA187A834E00788682 /* Topic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4001F9187A834E00788682 /* Topic.m */; };
 		6A4001FB187A834E00788682 /* Topic.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4001F9187A834E00788682 /* Topic.m */; };
 		6A4001FF187A837B00788682 /* TopicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4001FE187A837B00788682 /* TopicTests.m */; };
+		6A400201187A87C700788682 /* QuestionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A400200187A87C700788682 /* QuestionTests.m */; };
+		6A400204187A87E600788682 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A400203187A87E600788682 /* Question.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,9 @@
 		6A4001F8187A834E00788682 /* Topic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Topic.h; sourceTree = "<group>"; };
 		6A4001F9187A834E00788682 /* Topic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Topic.m; sourceTree = "<group>"; };
 		6A4001FE187A837B00788682 /* TopicTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicTests.m; sourceTree = "<group>"; };
+		6A400200187A87C700788682 /* QuestionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionTests.m; sourceTree = "<group>"; };
+		6A400202187A87E600788682 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		6A400203187A87E600788682 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +170,8 @@
 			children = (
 				6A4001F8187A834E00788682 /* Topic.h */,
 				6A4001F9187A834E00788682 /* Topic.m */,
+				6A400202187A87E600788682 /* Question.h */,
+				6A400203187A87E600788682 /* Question.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -181,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				6A4001FE187A837B00788682 /* TopicTests.m */,
+				6A400200187A87C700788682 /* QuestionTests.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -281,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A4001FA187A834E00788682 /* Topic.m in Sources */,
+				6A400204187A87E600788682 /* Question.m in Sources */,
 				6A1EE1CC1874310800331BF7 /* AppDelegate.m in Sources */,
 				6A1EE1C81874310800331BF7 /* main.m in Sources */,
 			);
@@ -291,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A1EE1E11874310800331BF7 /* TDDBrowserOverflowTests.m in Sources */,
+				6A400201187A87C700788682 /* QuestionTests.m in Sources */,
 				6A4001FF187A837B00788682 /* TopicTests.m in Sources */,
 				6A4001FB187A834E00788682 /* Topic.m in Sources */,
 			);
