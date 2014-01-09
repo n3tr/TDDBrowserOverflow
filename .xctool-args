@@ -1,0 +1,8 @@
+[
+  "-project", "TDDBrowserOverflow.xcodeproj",
+  "-scheme", "TDDBrowserOverflow",
+  "-configuration", "Debug",
+  "-sdk", "iphonesimulator",
+  "-arch", "i386",
+  "-reporter", "junit:reports/tests-report.xml",
+]
