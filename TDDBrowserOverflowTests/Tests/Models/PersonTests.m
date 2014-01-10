@@ -28,6 +28,11 @@
     [super tearDown];
 }
 
+- (void)testThatPersonExists
+{
+    XCTAssertNotNil(_person, @"it should be able to creaet");
+}
+
 - (void)testThatPersonHasTheRightName
 {
     XCTAssertEqualObjects(_person.name, @"Jirat K.", @"expecting a person to provide its name");
