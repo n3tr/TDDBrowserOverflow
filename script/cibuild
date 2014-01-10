@@ -1,2 +1,2 @@
 #!/bin/sh
-/usr/local/bin/xctool clean test
+/usr/local/bin/xctool test
