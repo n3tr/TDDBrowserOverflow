@@ -26,9 +26,5 @@
     [super tearDown];
 }
 
-- (void)testExample
-{
-    XCTAssertNotNil(@1, @"1 should not be nil");
-}
 
 @end
